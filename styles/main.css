@@ -1,0 +1,153 @@
+/* Global */
+:root{
+    --theme-color: #0a69b7;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 4rem;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 2rem;
+    color: var(--theme-color);
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+/* Header */
+.logo{
+    color: #fff;    
+}
+
+.logo h1{
+    font-size: 4rem;
+    font-family: Edelsans, Avenir, sans-serif;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--theme-color);
+    height: 5.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list{
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.nav-item{
+    border-bottom: 2px solid rgba(225,255,255, .3);
+}
+
+.nav-link{
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    transition: color.5s;
+}
+
+.nav-link:hover{
+    color: #000000;
+}
+
+/* Hero */
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text{
+    color:var(--theme-color);
+    font-size: 7rem;
+    font-family: Edelsans, Avenir, sans-serif;
+}
+
+/* Footer */
+footer{
+    margin-top: 5rem;
+    padding-top: 3rem;
+    background-color: var(--theme-color);
+    text-align: center;
+    position: relative;
+}
+
+footer-content{
+    overflow: hidden;
+}
+
+footer h3{
+    color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-family: Edelsans, Avenir, sans-serif;
+}
+
+footer p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: Edelsans, Avenir, sans-serif;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li{
+    list-style: none;
+    width: 4rem;
+    margin: 2rem 0;
+    padding: 0 .9rem;
+}
