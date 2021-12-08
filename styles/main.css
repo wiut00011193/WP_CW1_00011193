@@ -27,8 +27,8 @@ a {
 
 p {
     font-size: 2rem;
-    color: var(--theme-color);
     text-align: center;
+    color: var(--theme-color);
 }
 
 .container {
@@ -43,17 +43,14 @@ p {
 
 .logo h1 {
     font-size: 3.5rem;
-    font-family: Edelsans, Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
 }
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     width: 100%;
-    height: 5.5rem;
     padding-right: 1rem;
+    padding-left: 1rem;
     align-items: center;
     background-color: var(--theme-color);
 }
@@ -74,11 +71,11 @@ nav {
 }
 
 .nav-item {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .nav-link {
-    font-family: Edelsans, Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
@@ -103,7 +100,7 @@ nav {
 }
 
 .hero-text {
-    padding-top: 13%;
+    padding-top: 10vh;
     font-family: Tahoma, sans-serif;
     font-size: 7rem;
     color: var(--theme-color);
@@ -118,13 +115,13 @@ footer {
 
 footer h3 {
     padding-bottom: 1rem;
-    font-family: Edelsans, Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
     font-size: 2.5rem;
     color: #ffffff;
 }
 
 footer p {
-    font-family: Edelsans, Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
     font-size: 1.1rem;
     color: #ffffff;
 }
@@ -143,9 +140,7 @@ footer p {
 
 @media screen and (max-width: 1050px) {
     .header.dropdown .nav-list {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0.5rem;
+        display: block;
         background-color: var(--theme-color);
     }
 
@@ -160,7 +155,6 @@ footer p {
     
     .header.dropdown .logo h1 {
         padding-left: 1rem;
-        padding-top: 0.7rem;
     }
 
     .nav-list {
@@ -169,47 +163,34 @@ footer p {
 
     .menu-toggle {
         position: absolute;
-        top: 1rem;
+        top: 0.5rem;
         right: 1rem;
         display: block;
-        width: 2.8rem;
+        width: 2.5rem;
         color: #ffffff;
         cursor: pointer;
     }
 
     .hero-text {
-        padding-top: 20%;
+        padding-top: 20vh;
         font-size: 5rem;
     }
 
     .logo h1 {
-        font-size: 3rem;
-    }
-
-    .header {
-        padding-left: 1rem;
-        padding-right: 2rem;
+        font-size: 2.5rem;
     }
 }
 
 @media screen and (max-width: 700px) {
     .hero-text {
-        padding-top: 40%;
+        padding-top: 25vh;
         font-size: 3.5rem;
-    }
-
-    .logo h1 {
-        font-size: 3rem;
-    }
-
-    .header {
-        padding-left: 1rem;
-        padding-right: 2rem;
     }
 }
 
-@media screen and (max-width: 300px) {
-    .logo h1 {
-        font-size: 2.5rem;
+@media screen and (min-width: 1600px) {
+    .hero-text {
+        padding-top: 15vh;
+        font-size: 10rem;
     }
 }
