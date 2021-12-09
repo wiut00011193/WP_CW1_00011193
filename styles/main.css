@@ -89,7 +89,6 @@ nav {
     width: 100%;
     min-height: 100vh;
     padding: 0 0;
-    margin: 0.1rem 0;
     justify-content: center;
     text-align: center;
     background-color: var(--background-color);
@@ -148,6 +147,45 @@ nav {
 .timetable-text-below {
     margin-top: 2rem;
     font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Trainers */
+.trainers-page {
+    display: block;
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    color: var(--theme-color);
+    background-color: var(--background-color);
+}
+
+.trainers-overview h2 {
+    margin-bottom: 3vh;
+    font-size: 3.5rem;
+    font-family: Avenir, sans-serif;
+}
+
+.trainers-overview p {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.trainer-cards {
+    display: flex;   
+}
+
+.trainer-card {
+    width: 8rem;
+    height: 8rem;
+    margin: 5rem auto 15rem;
+    align-items: center;
+}
+
+.trainer-name {
+    font-size: 1.2rem;
+    font-weight: bold;
     font-family: Tahoma, sans-serif;
 }
 
@@ -168,8 +206,8 @@ nav {
 }
 
 .aboutus-text {
-    font-family: Tahoma, sans-serif;
     font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Contact */
@@ -330,6 +368,19 @@ footer p {
         font-size: 1.3rem;
     }
 
+    /* Trainers */
+    .trainers-overview p {
+        margin-bottom: 5rem;
+    }
+
+    .trainer-cards {
+        display: block;
+    }
+
+    .trainer-card {
+        margin: 0 auto 15rem;
+    }
+
     /* About Us */
     .aboutus {
         padding-top: 2vh;
@@ -385,6 +436,28 @@ footer p {
     .timetable tr td {
         width: 20rem;
         height: 10rem;
+    }
+
+    /* Trainers */
+    .trainers-overview h2 {
+        font-size: 6rem;
+    }
+
+    .trainers-overview p {
+        font-size: 2.5rem;
+    }
+
+    .trainer-card {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .trainer-name {
+        font-size: 2rem;
+    }
+
+    .trainer-card figcaption {
+        font-size: 1.7rem;
     }
 
     /* About Us */
