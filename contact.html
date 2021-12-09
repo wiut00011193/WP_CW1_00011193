@@ -36,6 +36,23 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Contact -->
+        <section>
+            <div class="container contact">
+                <h2>Contact Us</h2>
+                <form name="contactForm" onsubmit="return(validate_form());">
+                    <div class="contact-form">
+                        <div class="contact-name-email-holder">
+                            <input class="contact-name" name="contactName" type="text" placeholder="Your Name">
+                            <input class="contact-email" name="contactEmail" type="email" placeholder="Your Email">
+                        </div>
+                        <textarea class="contact-message" name="contactMessage" rows="1" placeholder="Message"></textarea>
+                        <button>Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
         
         <!-- Footer -->
         <footer>
@@ -64,5 +81,6 @@
 
         <!-- Script -->
         <script src="scripts/menu.js"></script>
+        <script src="scripts/form.js"></script>
     </body>
 </html>
