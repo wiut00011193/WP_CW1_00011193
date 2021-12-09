@@ -96,7 +96,7 @@ nav {
 
 .hero-text {
     padding-top: 15vh;
-    font-family: Tahoma, sans-serif;
+    font-family: Cambria, Avenir, sans-serif;
     font-size: 7rem;
     color: var(--theme-color);
 }
@@ -115,7 +115,7 @@ nav {
 .timetable-page h2 {
     margin-bottom: 3vh;
     font-size: 3.5rem;
-    font-family: Avenir, sans-serif;
+    font-family: Cambria, Avenir, sans-serif;
 }
 
 .timetable-holder {
@@ -164,7 +164,7 @@ nav {
 .trainers-overview h2 {
     margin-bottom: 3vh;
     font-size: 3.5rem;
-    font-family: Avenir, sans-serif;
+    font-family: Cambria, Avenir, sans-serif;
 }
 
 .trainers-overview p {
@@ -178,8 +178,8 @@ nav {
 
 .trainer-card {
     width: 8rem;
-    height: 8rem;
-    margin: 5rem auto 15rem;
+    height: auto;
+    margin: 5rem auto 2rem;
     align-items: center;
 }
 
@@ -187,6 +187,52 @@ nav {
     font-size: 1.2rem;
     font-weight: bold;
     font-family: Tahoma, sans-serif;
+}
+
+/* Pricing */
+.pricing-page {
+    display: block;
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    color: var(--theme-color);
+    background-color: var(--background-color);
+}
+
+.pricing-page h2 {
+    margin-bottom: 3vh;
+    font-size: 3.5rem;
+    font-family: Cambria, Avenir, sans-serif;
+}
+
+.pricing-cards {
+    display: flex;
+    margin-top: 7vh;
+}
+
+.pricing-card {
+    width: 25vw;
+    margin: 0 auto;
+    padding: 2rem;
+    border: solid 1px var(--theme-color);
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+.pricing-card h4 {
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+.pricing-card p {
+    font-size: 1.5rem;
 }
 
 /* About Us */
@@ -202,7 +248,7 @@ nav {
 .aboutus h2 {
     margin-bottom: 3vh;
     font-size: 3.5rem;
-    font-family: Avenir, sans-serif;
+    font-family: Cambria, Avenir, sans-serif;
 }
 
 .aboutus-text {
@@ -219,7 +265,7 @@ nav {
 
 .contact h2 {
     font-size: 3.5rem;
-    font-family: Avenir, sans-serif;
+    font-family: Cambria, Avenir, sans-serif;
     color: var(--theme-color);
 }
 
@@ -245,6 +291,7 @@ nav {
 }
 
 .contact-message {
+    min-height: 5vh;
     max-height: 20vh;
     margin: 0 auto;
     resize: vertical;
@@ -345,6 +392,17 @@ footer p {
         font-size: 5rem;
     }
 
+    /* Pricing */
+    .pricing-cards {
+        display: block;
+    }
+
+    .pricing-card {
+        width: auto;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
     /* About Us */
     .aboutus-text {
         font-size: 2rem;
@@ -375,10 +433,6 @@ footer p {
 
     .trainer-cards {
         display: block;
-    }
-
-    .trainer-card {
-        margin: 0 auto 15rem;
     }
 
     /* About Us */
@@ -458,6 +512,23 @@ footer p {
 
     .trainer-card figcaption {
         font-size: 1.7rem;
+    }
+
+    /* Pricing */
+    .pricing-page h2 {
+        font-size: 7rem;
+    }
+
+    .pricing-card h3 {
+        font-size: 2rem;
+    }
+
+    .pricing-card h4 {
+       font-size: 3.5rem;
+    }
+
+    .pricing-card p {
+        font-size: 2rem;
     }
 
     /* About Us */
